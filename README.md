@@ -14,7 +14,7 @@ which captures both time series patterns and influence of external variables.
 Gold prices are influenced by various economic and market factors. Accurate forecasting of gold rates can help investors, traders
 or financial analysts make informed decisions.
 
-##Dataset
+## Dataset
 Historical data of Gold Price, USD/INR exchange rate and NIFTY50 (Indian stock market index) was collected using 
 Yahoo Finance API (yfinance) and for Inflation and Repo rates: [RBI Database](https://data.rbi.org.in/DBIE/#/dbie/home)
 
@@ -24,11 +24,11 @@ NOTE: Each gold price represents 100 troy ounces of gold.
  • April 2019 - April 2026
 
 ## Project Workflow
-1. Data Collection
+### 1. Data Collection
 
-Downloaded the historical data 
+ Downloaded the historical data 
 
-2. Data Preprocessing
+### 2. Data Preprocessing
 
  • Date indexing
 
@@ -38,7 +38,7 @@ Downloaded the historical data
 
  • Feature selection
 
-3. Exploratory Data Analysis
+### 3. Exploratory Data Analysis
 
  • Distribution Analysis
 
@@ -48,11 +48,11 @@ Downloaded the historical data
 
  • Time Series Decomposition
 
-4. Stationarity Testing
+### 4. Stationarity Testing
 
- Applied Augmented Dickey-fuller (ADF) Test to verify stationarity.
+  Applied Augmented Dickey-fuller (ADF) Test to verify stationarity.
 
-5. Feature Engineering
+### 5. Feature Engineering
 
  • Log Transformation
 
@@ -60,26 +60,26 @@ Downloaded the historical data
 
  • Creation of exogenous variables
 
-6. Model Building
+### 6. Model Building
 
-Implemented a SARIMAX model with:
+ Implemented a SARIMAX model with:
 
-Order = (2,0,1)
+ Order = (2,0,1)
 
-Seasonal Order = (2,1,1,7)
+ Seasonal Order = (2,1,1,7)
 
-7. Evaluation
+### 7. Evaluation
 
-### Performance Metrics and Results
+#### Performance Metrics and Results
 Root Mean Squared Error: 78080.45
 
 Mean Absolute Error: 58524.94
 
 Mean Absolute Percentage Error(MAPE): 17.69%
 
-8. Future Forecasting
+### 8. Future Forecasting
 
-Forecasted the gold prices for next 60 days using predicted exogenous variables.
+ Forecasted the gold prices for next 60 days using predicted exogenous variables.
 
 ## Tools and Technologies 
  • Python
@@ -119,6 +119,7 @@ Forecasted the gold prices for next 60 days using predicted exogenous variables.
 
 ## Future Improvements
  • Augmenting additional economic indicators
+ 
  • Build real time forecasting dashboard
 
 
